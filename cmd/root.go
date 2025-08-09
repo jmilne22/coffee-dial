@@ -12,12 +12,6 @@ import (
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "coffee-dial",
-	Short: "A CLI tool for recording and managing coffee brewing recipes and dial-ins.",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
 	Short: "A CLI tool for recording and managing coffee dial-in recipes",
 	Long: `coffee-dial is a command-line application for recording, managing, and sharing coffee dial-in recipes.
 
@@ -25,14 +19,14 @@ With coffee-dial, you can log details about your coffee beans, roasters, brewing
 This helps you track your dial-in process and reproduce your favorite brews.
 
 Example usage:
-  coffee-dial --name "Ethiopia Yirgacheffe" --roaster "Blue Bottle" --method "V60" --grinder "Baratza Encore" --setting "15"
+		coffee-dial --name "Ethiopia Yirgacheffe" --roaster "Blue Bottle" --method "V60" --grinder "Baratza Encore" --setting "15"
 
 Flags:
-  --name      The name of the coffee.
-  --roaster   The name of the roaster.
-  --method    The method of brewing the coffee.
-  --grinder   The name of the grinder.
-  --setting   The grinder setting.
+		--name      The name of the coffee.
+		--roaster   The name of the roaster.
+		--method    The method of brewing the coffee.
+		--grinder   The name of the grinder.
+		--setting   The grinder setting.
 
 For more information, visit the project repository or run 'coffee-dial --help'.`,
 	// Uncomment the following line if your bare application
